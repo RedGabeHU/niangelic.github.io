@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Website Tutorial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .navbar { /*Menu bar*/
+            margin-bottom: 0;
+            border-radius: 0;
+            background-color: #5E4485;
+            color: #FFF;
+            padding: 1% 0;
+            font-size: 1.2em;
+            border: 0;
+        }
+
+        .navbar-brand { /*Logo elhelyezkedese*/
+            float: left;
+            min-height: 55px;
+            padding: 0 15px 50px;
+        }
+
+        .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,
+        .navbar-inverse .navbar-nav .active a:hover { /*Focusba levo menu kitoltese*/
+            color: #FFF;
+            background-color: #5E4485;
+        }
+
+        .navbar-inverse .navbar-nav li a { /*Focuson kivul menu menu*/
+            color: #D5D5D5;
+        }
+        footer {
+            width: 100%;
+            background-color: #5E4485;
+            padding: 5%;
+            color: #FFF;
+        }
+
+        .fa {
+            padding: 15px;
+            font-size: 25px;
+            color: #FFF;
+        }
+
+            .fa:hover {
+                color: #D5D5D5;
+                text-decoration: none;
+            }
+
+        @media (max-width:900px) {
+            .fa {
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head >
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="Images/w3newbie.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <!--navbar-right jelzi, hogy merre legyen eltolva-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+        <h1>Ez a tovabbi informaciokat tartalmazo oldal</h1>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <!--Footer resz-->
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Contact Us</h3>
+                <br />
+                <h4>A cim es eleresi resz ide</h4>
+            </div>
+            <div class="col-sm-4">
+                <h3>Connect</h3>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+            <div class="col-sm-4">
+                <img src="Images/bunny.png" class="icon" />
+            </div>
+        </div>
+    </footer>
+</body> 
+</html >
